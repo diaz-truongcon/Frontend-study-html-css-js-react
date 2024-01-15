@@ -31,3 +31,29 @@ nav {
 nav li {
     margin-left: 20px;
 }
+main {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.thing .how {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.thing .box {
+  position: relative;
+}
+.thing .box h1 {
+    position: absolute;
+    left: 15px;
+    bottom: 60px;
+    color: white;
+}
+.thing .box p {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    color: white;
+    font-size: 10px;
+}
