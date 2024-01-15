@@ -104,7 +104,7 @@ main {
 }
 .latest .box h3 {
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
     background-color: red;
 }
 .latest .box img {
@@ -118,4 +118,13 @@ main {
     margin-top: 30px;
     border: none;
     border-radius: 10px;
+}
+.latest .latest-right .stay {
+    border: 1px solid black;
+    padding: 20px 10px;
+}
+.latest .latest-right h1 {
+    display: inline;
+    border-bottom: 2px solid black;
+    padding-right: 10px;
 }
