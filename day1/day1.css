@@ -4,7 +4,7 @@
 }
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 li {
     list-style: none;
@@ -56,4 +56,22 @@ main {
     bottom: 40px;
     color: white;
     font-size: 10px;
+}
+.thing .this {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+} 
+.thing .about {
+    position: relative;
+    height: 200px;
+}
+.thing .this h2 {
+    position: absolute;
+    justify-content: center;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
 }
