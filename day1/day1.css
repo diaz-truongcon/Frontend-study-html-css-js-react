@@ -104,8 +104,9 @@ main {
 }
 .latest .box h3 {
     position: absolute;
-    bottom: 65px;
+    bottom: 50px;
     background-color: red;
+    font-size: 15px;
 }
 .latest .box img {
     height: 80%;
@@ -126,5 +127,51 @@ main {
 .latest .latest-right h1 {
     display: inline;
     border-bottom: 2px solid black;
-    padding-right: 10px;
+    padding-right: 40px;
+}
+.latest .social {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 30px;
+}
+.latest .social img {
+    width: 40%;
+    height: 60%;
+    border-radius: 60px;
+    margin-left: 10px;
+}
+.latest .face {
+    position: relative;
+}
+.latest .zara {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.latest .latest-right .authors {
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+.latest .najam img {
+    width: 20%;
+    height: 20%;
+    border-radius: 60px;
+}
+.latest .latest-right .najam {
+    position: relative;
+    margin-top: 10px;
+}
+.latest .latest-right h4 {
+    position: absolute;
+    bottom: 30px;
+    left: 65px;
+}
+.latest .zara p {
+    position: absolute;
+    bottom: 20px;
+    left: 65px;
+    font-size: 10px;
 }
