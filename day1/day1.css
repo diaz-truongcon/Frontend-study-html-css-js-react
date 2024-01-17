@@ -99,18 +99,16 @@ main {
    gap: 15px;
    margin-top: 30px;
 }
-.latest .box {
+.latest .we-img {
     position: relative;
 }
-.latest .box h3 {
+.latest .we-img h3 {
     position: absolute;
-    bottom: 65px;
+    bottom: 0px;
     background-color: red;
     font-size: 15px;
 }
-.latest .box img {
-    height: 80%;
-}
+
 .latest button {
     width: 100%;
     padding: 20px;
