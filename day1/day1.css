@@ -104,7 +104,7 @@ main {
 }
 .latest .box h3 {
     position: absolute;
-    bottom: 50px;
+    bottom: 65px;
     background-color: red;
     font-size: 15px;
 }
@@ -122,7 +122,7 @@ main {
 }
 .latest .latest-right .stay {
     border: 1px solid black;
-    padding: 20px 10px;
+    padding: 20px;
 }
 .latest .latest-right h1 {
     display: inline;
@@ -147,13 +147,12 @@ main {
     position: relative;
 }
 .latest .zara {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 80px 10px;
 }
 .latest .latest-right .authors {
     border: 1px solid black;
-    padding: 20px 10px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 50px;
 }
 .latest .najam img {
     width: 20%;
@@ -162,16 +161,104 @@ main {
 }
 .latest .latest-right .najam {
     position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .latest .latest-right h4 {
     position: absolute;
-    bottom: 30px;
-    left: 65px;
+    bottom: 40px;
+    left: 100px;
+    font-size: 20px;
 }
 .latest .zara p {
     position: absolute;
     bottom: 20px;
-    left: 65px;
-    font-size: 10px;
+    left: 100px;
+    font-size: 15px;
+}
+.video {
+    margin: 0 auto;
+    background-color: rgb(190, 182, 182);
+    padding: 20px;
+    margin-top: 40px;
+}
+.video h1 {
+    border-bottom: 1px solid black;
+    display: inline;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+.headline {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.headline .headline-left {
+    border: 1px solid black;
+    padding: 20px;
+}
+.headline h1 {
+    border-bottom: 1px solid black;
+    width: 150px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.headline hr {
+    width: 50%;
+}
+.headline .big {
+    margin-bottom: 100px;
+}
+.headline .tips {
+    margin-top: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+.headline img {
+    width: 15%;
+}
+.headline h2 {
+    position: absolute;
+    left: 140px;
+    bottom: 50px;
+    font-size: 20px;
+}
+.headline .desc {
+    position: absolute;
+    left: 140px;
+    bottom: 30px;
+}
+.headline .date {
+    position: absolute;
+    left: 140px;
+    bottom: 0px;
+}
+.headline .tips hr {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+.headline .headline-right {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.headline-right hr {
+    width: 100%;
+}
+.headline .headline-right p {
+    font-size: 25px;
+    margin-top: 30px;
+}
+.headline .headline-right button {
+    width: 30%;
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: lawngreen;
+    color: white;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 250px;
 }
