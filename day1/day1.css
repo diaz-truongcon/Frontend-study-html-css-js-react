@@ -196,12 +196,25 @@ main {
 }
 .video .play-img p {
     position: absolute;
-    left: 100px;
+    width: 100%;
+    text-align: center;
     bottom: 20px;
     font-size: 20px;
     color: white;
 }
-
+.video .icon-play {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video .icon-play i {
+    font-size: 40px;
+    color: #c0bcb8;
+}
 .headline {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -221,38 +234,17 @@ main {
 .headline hr {
     width: 50%;
 }
-.headline .big {
-    margin-bottom: 100px;
-}
-.headline .tips {
+.headline-left .big {
     margin-top: 20px;
-    position: relative;
-    margin-right: 20px;
 }
-.headline img {
-    width: 15%;
+.headline-left .tips {
+   display: grid;
+   grid-template-columns: 1fr 6fr;
+   gap: 10px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid black;
 }
-.headline h2 {
-    position: absolute;
-    left: 140px;
-    bottom: 50px;
-    font-size: 20px;
-}
-.headline .desc {
-    position: absolute;
-    left: 140px;
-    bottom: 30px;
-}
-.headline .date {
-    position: absolute;
-    left: 140px;
-    bottom: 0px;
-}
-.headline .tips hr {
-    width: 100%;
-    position: absolute;
-    top: 100px;
-}
+
 .headline .headline-right {
     border: 1px solid black;
     padding: 20px;
@@ -261,18 +253,30 @@ main {
 .headline-right hr {
     width: 100%;
 }
+.tips-content h6 {
+    margin-top: 10px;
+}
 .headline .headline-right p {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
 }
 .headline .headline-right button {
-    width: 30%;
     font-size: 20px;
-    padding: 15px 20px;
+    padding: 15px;
     background-color: lawngreen;
     color: white;
-    margin-top: 30px;
     border: none;
     border-radius: 5px;
-    margin-left: 250px;
+}
+.button-submit {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+.headline-right input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(146, 142, 142);
 }
