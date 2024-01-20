@@ -280,3 +280,9 @@ main {
     margin-top: 10px;
     border: 1px solid rgb(146, 142, 142);
 }
+footer {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #c0bcb8;
+    text-align: center;
+}
