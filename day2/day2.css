@@ -5,7 +5,7 @@
 .form-dang-nhap {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    padding: 0px 400px;
+    padding: 0px 200px;
 }
 body {
     height: 100vh;
@@ -47,7 +47,7 @@ form {
     padding: 10px;
     border-radius: 40px;
     background-color: blue;
-    border: none;
+    border: 0px;
     color: white;
 }
 #login h1 {
@@ -56,7 +56,14 @@ form {
 }
 #login .group {
     margin-bottom: 10px;
+    position: relative;
 }
+.group .icon {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+}
+
 .user {
     display: flex;
     justify-content: space-between;
@@ -87,16 +94,7 @@ form {
     padding: 10px 15px;
     border-radius: 5px;
 }
-.regis {
-    text-align: center;
-}
 p {
-    display: inline-block;
-}
-.hover {
-    color: blue;
-    cursor: pointer;
-}
-.hover:hover {
-    color: lightskyblue;
+    text-align: center;
+    margin-top: 10px;
 }
