@@ -286,3 +286,9 @@ footer {
     background-color: #c0bcb8;
     text-align: center;
 }
+
+
+.table-css{
+    background-color: red;
+    border-radius: 40px;
+}

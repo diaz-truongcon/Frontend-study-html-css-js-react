@@ -2,41 +2,91 @@
     margin: 0;
     box-sizing: border-box;
 }
+.form-dang-nhap {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 0px 200px;
+}
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/dataimages/201706/original/images1920558_4053279_16.jpg);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/024/518/502/large_2x/plane-is-flying-in-the-sky-above-the-clouds-ai-generated-free-photo.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px 0px 0px 20px;
+}
+.content-dn {
+    background-color: white;
+    opacity: 90%;
+    border-radius: 0px 20px 20px 0px;
+}
 form {
-    height: 80%;
-    background-color: antiquewhite;
-    width: 30%;
-    border-radius: 10px;
-    padding: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 80px;
 }
 #login input[type=text] {
    width: 100%;
-   padding: 8px;
-   border-radius: 5px;
+   padding: 8px 8px 8px 20px;
+   border-radius: 40px;
 }
-
+#login input[type=password] {
+    width: 100%;
+    padding: 8px 8px 8px 20px;
+    border-radius: 40px;
+}
+#login input[type=button] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: blue;
+    border: 0px;
+    color: white;
+}
 #login h1 {
     text-align: center;
-    margin-top: 30px;
-
+    margin-bottom: 20px;
 }
 #login .group {
     margin-bottom: 10px;
 }
-select {
-    width: 100%;
-    padding: 8px;
+.user {
+    display: flex;
+    justify-content: space-between;
 }
-table {
-    background-color: aliceblue;
+#login h3 {
+    text-align: center;
+}
+.social {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.face {
+    background-color: rgb(54, 54, 161);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.goo {
+    background-color: rgb(204, 61, 61);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.twi {
+    background-color: rgb(53, 199, 224);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+p {
+    text-align: center;
 }
