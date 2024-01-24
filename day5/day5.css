@@ -12,6 +12,9 @@ header {
     justify-content: space-between;
      padding: 0 30px;
      align-items: center;
+     .bars {
+        display: none;
+     }
     .link {
         display: flex;
         .icon {
@@ -20,9 +23,14 @@ header {
     }
     .menu {
         display: flex;
+        .list {
+            display: flex;
+        }
         li {
             list-style: none;
-            margin-right: 20px;
+            margin-right: 20px;         
+        }
+        .user {
             i {
                 padding: 4px;
                 background-color: black;
@@ -33,3 +41,32 @@ header {
         }
     }
 }
+
+
+/* Laptop */
+@media screen and (min-width:1025px) {
+    
+ }
+ 
+ /* Tablet */
+ @media screen and (min-width:741px) and (max-width:1024px) {
+     
+ }
+ 
+ /* Mobile */
+ @media screen and (max-width:740px){
+    header {
+        .bars {
+            display: block ;
+         }
+         .menu {
+            .list {
+                display: none;     
+             }
+         }
+        
+
+    }
+     
+
+ }
