@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+header {
+    height: 50px;
+    background-color: blue;
+}
+ /* scss */
+ .header {
+    grid-area: h;
+    background-color: aqua;
+  }
+  .feature1 {
+   grid-area: f1;
+   background-color: yellow;
+  }
+  .feature2 {
+   grid-area: f2;
+   background-color: violet;
+  }
+  .feature3 {
+   grid-area: f3;
+   background-color: red;
+  }
+  .signup {
+   grid-area: s;
+   background-color: darkorange;
+  }
+  .content {
+   grid-area: c;
+   background-color: lawngreen;
+  }
+  .container {
+    display: grid;
+    height: calc(100vh - 50px);
+   }
+
+/* Laptop */
+@media screen and (min-width:1025px) {
+   .container {  
+    grid-template-areas:
+    "h h h"
+    "f1 f2 f3"
+    "s s s"
+    "c c c"
+    ;
+   }
+   
+}
+
+/* Tablet */
+@media screen and (min-width:741px) and (max-width:1024px) {
+    .container {  
+        grid-template-areas:
+        "h h"
+        "c c"
+        "s f1"
+        "f2 f3"
+        ;
+       }
+}
+
+/* Mobile */
+@media screen and (max-width:740px){
+    .container {  
+        grid-template-areas:
+        "h"
+        "c"
+        "s"
+        "f1"
+        "f2"
+        "f3"
+        ;
+       }
+}
