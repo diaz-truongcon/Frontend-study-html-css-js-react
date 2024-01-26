@@ -43,13 +43,10 @@ header {
 }
 main {
     .landing {
-        display: grid;
-        grid-template-columns: 3fr 2fr;
-        padding: 50px;
-        background: rgb(70, 184, 165);
-        color: white;
-        /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fvietnam.travel%2Fthings-to-do%2Fthe-best-ways-to-explore-the-ancient-town-of-hoi-an&psig=AOvVaw0wZfgZR4U92JAfBLz8ct0e&ust=1706339248770000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiA45u_-oMDFQAAAAAdAAAAABAD);
-        background-size: 100% 100%; */
+                padding: 50px;
+        color: azure;
+        background-image: url("https://hoianfoodtour.com/wp-content/uploads/2018/06/boat-trip-along-Bach-Dang-River-river.jpg");
+        background-size: 100% 100%;
         .travel-news {
             margin: 0 auto;
             h1 {
@@ -74,7 +71,7 @@ main {
                 .email {                    
                     input {
                         padding: 15px;
-                        width: 300px;
+                        width: 350px;
                         background-color: transparent;
                         color: white;
                         border-color: white;
@@ -118,17 +115,95 @@ main {
             }
         }
     }
+    .discovery {
+        padding: 50px 160px;
+        h2 {
+            padding-bottom: 30px;
+            font-size: 25px;
+        }
+        .lorem {
+            display: grid;
+            gap: 20px;            
+            .group {
+                border: 1px;
+                border-color: black;
+                background-color: red;
+                .lorem-content {
+                    padding: 15px;
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .time {
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        margin-right: 15px;
+                    }
+                }
+            }            
+        }
+    }
+    .photo {
+        padding: 160px;
+        color: red;
+        h2 {
+            padding-bottom: 30px;
+            font-size: 25px;
+        }
+        .leg1 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;    
+            .happen {
+                .happen1 {
+                    position: relative;
+                    margin-bottom: 20px;
+                    .now {
+                        position: absolute;
+                        bottom: 30px;
+                        left: 30px;
+                    }
+                }
+            }
+        }        
+    }
 }
 
 
 /* Laptop */
 @media screen and (min-width:1025px) {
-    
+    .landing {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        .more-news {
+
+        }
+    }
+    .discovery {
+        .lorem {
+            grid-template-columns: repeat(4, 1fr);
+        }
+     }
  }
  
  /* Tablet */
  @media screen and (min-width:741px) and (max-width:1024px) {
-     
+    .landing {
+        .more-news {
+            display: grid;
+            grid-template-columns: 1fr;
+            .travel-new {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    .discovery {
+        .lorem {
+            grid-template-columns: 1fr 1fr;
+        }
+     }
  }
  
  /* Mobile */
