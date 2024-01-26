@@ -41,6 +41,84 @@ header {
         }
     }
 }
+main {
+    .landing {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        padding: 50px;
+        background: rgb(70, 184, 165);
+        color: white;
+        /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fvietnam.travel%2Fthings-to-do%2Fthe-best-ways-to-explore-the-ancient-town-of-hoi-an&psig=AOvVaw0wZfgZR4U92JAfBLz8ct0e&ust=1706339248770000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIiA45u_-oMDFQAAAAAdAAAAABAD);
+        background-size: 100% 100%; */
+        .travel-news {
+            margin: 0 auto;
+            h1 {
+                padding-left: 15px;
+                padding-bottom: 0px;
+            }
+            hr {
+                margin-right: 20px;
+            }
+            p {
+                padding: 20px 30px;
+            }
+            h3 {
+                padding: 0px 0px 20px 30px;
+                font-size: 36px;
+            }
+            .noti {
+                display: flex;
+                padding-left: 30px;
+                justify-content: space-between;
+                align-items: center;
+                .email {                    
+                    input {
+                        padding: 15px;
+                        width: 300px;
+                        background-color: transparent;
+                        color: white;
+                        border-color: white;
+                        border-radius: 50px;
+                        font-size: 15px;
+                    }
+                }
+                button {
+                    padding: 15px 20px;
+                    background-color: orange;
+                    color: white;
+                    border-radius: 50px;
+                    border-color: white;
+                }
+            }
+        }
+        .more-news {
+            margin: 0 auto;   
+            padding: 50px;
+            color: black;
+            background-color: white;
+            .news {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 10px;
+                .icon {
+                    display: flex;
+                    .icon-1 {
+                        padding-right: 20px;
+                    } 
+                    .icon2 {
+                        color: orange;
+                        padding-right: 20px;
+                    }
+                }
+            }
+            h5 {
+                color: orange;
+                padding: 10px 0px;
+            }
+        }
+    }
+}
 
 
 /* Laptop */
@@ -63,7 +141,7 @@ header {
             .list {
                 display: none;     
              }
-         }
+          }
         
 
     }
