@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 img {
     width: 100%;
@@ -43,10 +44,10 @@ header {
 }
 main {
     .landing {
-                padding: 50px;
+        position: relative;
         color: azure;
         background-image: url("https://hoianfoodtour.com/wp-content/uploads/2018/06/boat-trip-along-Bach-Dang-River-river.jpg");
-        background-size: 100% 100%;
+        background-repeat: no-repeat;
         .travel-news {
             margin: 0 auto;
             h1 {
@@ -63,36 +64,32 @@ main {
                 padding: 0px 0px 20px 30px;
                 font-size: 36px;
             }
-            .noti {
+            .noti { 
                 display: flex;
-                padding-left: 30px;
-                justify-content: space-between;
-                align-items: center;
-                .email {                    
+                .email {
                     input {
                         padding: 15px;
-                        width: 350px;
                         background-color: transparent;
                         color: white;
                         border-color: white;
                         border-radius: 50px;
                         font-size: 15px;
                     }
-                }
-                button {
-                    padding: 15px 20px;
-                    background-color: orange;
-                    color: white;
-                    border-radius: 50px;
-                    border-color: white;
-                }
+                }             
+                 .button {
+                    button {
+                        padding: 15px 20px;
+                        background-color: orange;
+                        color: white;
+                        border-radius: 50px;
+                        border-color: white;
+                    }
+                 }   
+               
             }
         }
-        .more-news {
-            margin: 0 auto;   
-            padding: 50px;
+        .more-news {  
             color: black;
-            background-color: white;
             .news {
                 display: flex;
                 justify-content: space-between;
@@ -116,9 +113,10 @@ main {
         }
     }
     .discovery {
-        padding: 50px 160px;
+        padding: 0 5%;
         h2 {
-            padding-bottom: 30px;
+           margin-top: 50px;
+           margin-bottom: 30px;
             font-size: 25px;
         }
         .lorem {
@@ -127,9 +125,10 @@ main {
             .group {
                 border: 1px;
                 border-color: black;
-                background-color: red;
                 .lorem-content {
                     padding: 15px;
+                    border: 1px solid black;
+                    border-top: none;
                     p {
                         font-size: 20px;
                     }
@@ -145,28 +144,46 @@ main {
         }
     }
     .photo {
-        padding: 160px;
-        color: red;
+        padding: 0 5%;
         h2 {
-            padding-bottom: 30px;
-            font-size: 25px;
+           margin-top:50px;
+           margin-bottom: 30px;
+           font-size: 25px;
         }
-        .leg1 {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;    
+        .leg1 {    
             .happen {
                 .happen1 {
                     position: relative;
                     margin-bottom: 20px;
+                    height: 400px;
                     .now {
                         position: absolute;
                         bottom: 30px;
                         left: 30px;
+                        color: white;
                     }
                 }
             }
-        }        
+        }  
+        .dolor1 {
+            height: 400px;
+            margin-bottom: 20px;
+            .picture {
+                height: 250px;               
+            }
+            .content {
+                border: 1px solid black;
+                height: 150px;
+                padding: 20px;
+                .time {
+                    display: flex;
+                    margin-top: 10px;
+                    p {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }      
     }
 }
 
@@ -174,10 +191,14 @@ main {
 /* Laptop */
 @media screen and (min-width:1025px) {
     .landing {
+        padding: 50px;
         display: grid;
         grid-template-columns: 3fr 2fr;
+        background-size: 100% 100%;
         .more-news {
-
+            padding: 50px;
+            margin: 0 auto; 
+           background-color: white;
         }
     }
     .discovery {
@@ -185,17 +206,36 @@ main {
             grid-template-columns: repeat(4, 1fr);
         }
      }
+     .noti { 
+        justify-content: space-evenly;
+        .email {
+            width: 60%;
+            input {
+            width: 100%;
+            }
+        }             
+    }
+    .leg1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;    
+    }
  }
  
  /* Tablet */
  @media screen and (min-width:741px) and (max-width:1024px) {
     .landing {
+        background-size: 100% 50%;
+        padding: 50px;
         .more-news {
+            padding: 50px;
+            margin-top: 50px;
             display: grid;
             grid-template-columns: 1fr;
             .travel-new {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
     }
@@ -204,6 +244,20 @@ main {
             grid-template-columns: 1fr 1fr;
         }
      }
+     .noti { 
+        justify-content: space-evenly;
+        .email {
+            width: 60%;
+            input {
+            width: 100%;
+            }
+        }             
+    }
+    .dolor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
  }
  
  /* Mobile */
@@ -217,9 +271,44 @@ main {
                 display: none;     
              }
           }
-        
-
     }
-     
-
+    .landing {
+        padding: 10px;
+        background-size: 100% 60%;
+        .more-news {
+            padding: 10px;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr;
+            .travel-new {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        .icon {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    .discovery {
+        .lorem {
+            grid-template-columns: 1fr;
+        }
+     }
+     .noti { 
+        flex-direction: column;
+       align-items: center;
+        .email {
+            width: 100%;
+            input {
+            width: 100%;
+            margin-bottom: 10px;
+            }
+        }             
+    }
+    
  }
+
