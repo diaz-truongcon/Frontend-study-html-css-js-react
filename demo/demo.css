@@ -1,0 +1,37 @@
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  @media screen and (min-width:740px) and (max-width:1024px) {
+    .slideshow-container {
+      grid-template-columns: repeat(2,1fr);
+    }
+
+  }
