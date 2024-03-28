@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./comp1640.css">
+    <link rel="stylesheet" href="./edit_submission.css">
+    <link rel="stylesheet" href="./delete confirm.css">
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-1">
+                <p>BEE MAGAZINE
+                <p>
+            </div>
+            <div class="home an" id="home">
+                <div class="home-cover">
+                    <button class="home-button">Home</button>
+                </div>
+            </div>
+            <div class="button an" id="login">
+                <button class="login-button">Log in</button>
+            </div>
+            <div onclick="showmenu()" class="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="show-menu none">
+
+        </div>
+    </header>
+    <!-- UI Delete -->
+    <div class="show-modal-delete none">
+        <div class="panel">
+            <div class="img-delete">
+                <img src="https://freepngtransparent.com/wp-content/uploads/2023/03/X-Png-136.png" alt="">
+            </div>
+            <h2>Are you sure?</h2>
+            <p>You will not be able to recover anymore !</p>
+            <div class="deleted" onclick="closemodal_()">
+                <button class="del">Delete</button>
+                <button class="can">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- UI Edit -->
+    <div class="body-admin">
+        <div class="show-modal">
+            <div class="panel">
+                <div class="edit-title">
+                    Edit Submission
+                </div>
+                <h3>Title</h3>
+                <div class="title-content">
+                    Tech Terrain: Navigating the Digital Landscape
+                </div>
+                <h3>Description</h3>
+                <div class="title-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laboru
+                </div>
+                <div class="submit-file">
+                    <h3>Submit your file</h3>
+                    <div class="add-file">Add file</div>
+                </div>
+                <div class="file-content">
+                    <div class="file-1">
+                        <div class="file-inf">
+                            <p>-</p>
+                            <div class="icon-file">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+                            <div class="file-name">
+                                COMP1640_TechTerrrain:NavigatingtheDigitalLandscape_Draft.doc
+                            </div>
+                        </div>
+                        <div onclick="deletel()" class="icon-dele">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="file-1">
+                        <div class="file-inf">
+                            <p>-</p>
+                            <div class="icon-file">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+                            <div class="file-name">
+                                COMP1640_TechTerrrain:NavigatingtheDigitalLandscape_Draft.doc
+                            </div>
+                        </div>
+                        <div onclick="deletel()" class="icon-dele">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="submit-file">
+                    <h3>Submit image</h3>
+                    <div class="add-file">Add file</div>
+                </div>
+                <div class="file-content">
+                    <div class="file-1">
+                        <div class="file-inf">
+                            <p>-</p>
+                            <div class="icon-file">
+                                <i class="fa-regular fa-file-image"></i>
+                            </div>
+                            <div class="file-name">
+                                COMP1640_TechTerrrain:NavigatingtheDigitalLandscape_Draft.doc
+                            </div>
+                        </div>
+                        <div class="icon-dele">
+                            <div onclick="deletel()" class="icon-delete">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deleted" onclick="closemodal()">
+                    <button class="del">Confirm</button>
+                    <button class="can">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="colum">
+            <div class="colum-1">
+                <h2>COMP1640</h2>
+            </div>
+            <div class="colum-2">
+                <h3>About us</h3>
+                <div class="contact">
+                    <p>Popular</p>
+                    <p>Trending</p>
+                    <p>Contact</p>
+                    <p>Support/Help</p>
+                    <p>Request Topics</p>
+                </div>
+            </div>
+            <div class="colum-3">
+                <h3>Follow us</h3>
+                <div class="social">
+                    <div class="facebook">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="facebook">
+                        <div class="icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="facebook">
+                        <div class="icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="facebook">
+                        <div class="icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <p>LinkedIn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copy-right">
+            <div class="year">
+                2024 COMP1640. All right reserved.
+            </div>
+            <div class="policy">
+                <u>Privacy Policy</u>
+                <u>Term of Service</u>
+                <u>Cookies Settings</u>
+            </div>
+        </div>
+    </footer>
+    <script src="./edit.js"></script>
+</body>
+
+</html>

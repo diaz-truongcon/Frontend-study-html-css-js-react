@@ -6,3 +6,5 @@ git commit -m "XuanTruong" ( đóng gói thay đổi )
 git push ( đưa thay đổi lên github)
 
 git pull ( lấy thay đổi của thành viên trong nhóm về )
+
+npx json-server --watch db.json

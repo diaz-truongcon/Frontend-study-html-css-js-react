@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Confirm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./edit_submission.css">
+</head>
+
+<body>
+    <div class="body-admin">
+        <div class="show-modal none">
+            <div class="panel">
+                <div class="edit-title">
+                    Edit Submission
+                </div>
+                <h3>Title</h3>
+                <div class="title-content">
+                    Tech Terrain: Navigating the Digital Landscape
+                </div>
+                <h3>Description</h3>
+                <div class="title-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laboru
+                </div>
+                <div class="submit-file">
+                    <h3>Submit your file</h3>
+                    <div class="add-file">Add file</div>
+                </div>
+                <div class="file-content">
+                    <div class="file-1">
+                        <div class="file-inf">
+                            <p>-</p>
+                            <div class="icon-file">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+                            <div class="file-name">
+                                COMP1640_TechTerrrain:NavigatingtheDigitalLandscape_Draft.doc
+                            </div>
+                        </div>
+                        <div class="icon-dele">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="file-1">
+                        <div class="file-inf">
+                            <p>-</p>
+                            <div class="icon-file">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+                            <div class="file-name">
+                                COMP1640_TechTerrrain:NavigatingtheDigitalLandscape_Draft.doc
+                            </div>
+                        </div>
+                        <div class="icon-dele">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-file">
+                    <h3>Submit image</h3>
+                    <div class="add-file">Add file</div>
+                </div>
+                <div class="file-content">
+                    <div class="file-1">
+                        <div class="file-inf">
+                            <p>-</p>
+                            <div class="icon-file">
+                                <i class="fa-regular fa-file-image"></i>
+                            </div>
+                            <div class="file-name">
+                                COMP1640_TechTerrrain:NavigatingtheDigitalLandscape_Draft.doc
+                            </div>
+                        </div>
+                        <div class="icon-dele">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="deleted" onclick="closemodal()">
+                    <button class="del">Confirm</button>
+                    <button class="can">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-box">
+            <div onclick="deletel()" class="icon-delete">
+                <i class="fa-solid fa-trash"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./edit.js"></script>
+</body>
+
+</html>
