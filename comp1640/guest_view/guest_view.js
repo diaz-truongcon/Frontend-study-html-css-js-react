@@ -81,7 +81,9 @@ data1.forEach((item, index) => {
   show2.innerHTML +=
     `
         <div class="slide1 fade">
-            <img src="https://img.meta.com.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg" class="img-magazine">
+            <div class="img-magazine">
+            <img src="https://img.meta.com.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg">
+            </div>
             <div style="font-size: 12px; margin-top: 5px"> 5 min read </div>
             <div class="title-magazine">Magazines for graphic designers: The best graphic design publications</div>
             <div class="description-magazine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>

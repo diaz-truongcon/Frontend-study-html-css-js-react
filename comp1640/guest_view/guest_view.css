@@ -96,8 +96,8 @@ body {
             border-radius: 10px;
 
             .img-magazine {
-                height: 500px;
-                width: 500px;
+                height: 300px;
+                width: 100%;
             }
 
             .title-magazine {
@@ -168,8 +168,8 @@ body {
             border-radius: 10px;
 
             .img-magazine {
-                height: 350px;
-                width: 350px;
+                height: 250px;
+                width: 100%;
             }
 
             .title-magazine {
@@ -241,7 +241,7 @@ body {
 
             .img-magazine {
                 height: 150px;
-                width: 150px;
+                width: 100%;
             }
 
             .title-magazine {
