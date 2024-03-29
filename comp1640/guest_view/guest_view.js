@@ -80,7 +80,7 @@ data1.forEach((item, index) => {
     `
         <div class="slide1 fade">
             <div class="img-magazine">
-            <img src="https://img.meta.com.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg">
+            <img src="https://cdn.trangcongnghe.com.vn/uploads/posts/2023-08/1692861228_image.png">
             </div>
             <div style="font-size: 12px; margin-top: 5px"> 5 min read </div>
             <div class="title-magazine">Magazines for graphic designers: The best graphic design publications</div>
@@ -150,7 +150,7 @@ data3.forEach((item, index) => {
     `
         <div class="slide3 fade">
             <div class="img-magazine">
-            <img src="https://img.meta.com.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg">
+            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/8/21/829850/Bat-Cuoi-Truoc-Nhung-07.jpg">
             </div>
             <div style="font-size: 12px; margin-top: 5px"> 5 min read </div>
             <div class="title-magazine">Magazines for graphic designers: The best graphic design publications</div>

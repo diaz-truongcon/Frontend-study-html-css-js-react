@@ -15,7 +15,6 @@ img {
     display: none;
 } */
 body {
-    height: 250vh;
 
     .search-container {
         display: flex;
@@ -32,6 +31,26 @@ body {
         }
     }
 
+    .container-drop {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 20px;
+        .drop-down {
+            display: flex;
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #cddffc;
+            border-radius: 10px;
+            .major {
+                margin-right: 10px;
+            }
+        }
+        .drop-down:hover {
+            cursor: pointer;
+        }
+    }
+
     .magazine-container {
         .slideshow-container-3,
         .slideshow-container-2,
@@ -40,7 +59,9 @@ body {
             display: grid;
         }
     }
-    .slide-1,
+
+    .slide3,
+    .slide1,
     .slide {
         display: none;
         border: 1px solid rgb(184, 184, 184);
@@ -96,7 +117,8 @@ body {
             }
         }
 
-        .slide-1,
+        .slide3,
+        .slide1,
         .slide {
             padding: 10px;
             margin: 20px;
@@ -169,7 +191,8 @@ body {
             }
         }
 
-        .slide-1,
+        .slide3,
+        .slide1,
         .slide {
             padding: 10px;
             margin: 10px 5px;
@@ -241,8 +264,8 @@ body {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
-        .slide-1,
+        .slide3,
+        .slide1,
         .slide {
             padding: 5px;
             margin: 5px;
