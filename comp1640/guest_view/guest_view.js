@@ -6,6 +6,12 @@ function showmenu() {
   home.classList.toggle("an");
   show.classList.toggle("none");
 }
+ const drop = document.querySelector(".icon-drop");
+ const ul = document.querySelector(".drop-down ul");
+ drop.addEventListener("click", () => {
+   ul.classList.toggle("drop");
+ })
+
 
 var slideIndex = 1;
 
