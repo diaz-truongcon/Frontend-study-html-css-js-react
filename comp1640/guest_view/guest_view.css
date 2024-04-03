@@ -144,13 +144,17 @@ body {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
-
+        a {
+            text-decoration: none !important;
+            color: black;
+        }
         .slide3,
         .slide1,
         .slide {
             padding: 10px;
             margin: 20px;
             border-radius: 10px;
+            
 
             .img-magazine {
                 height: 300px;
@@ -172,7 +176,11 @@ body {
                 margin-top: 10px;
             }
         }
-
+        .slide3,
+        .slide1,
+        .slide:hover {
+            cursor: pointer;
+        }
         .prev,
         .next {
             top: 50%;

@@ -6,11 +6,11 @@ function showmenu() {
   home.classList.toggle("an");
   show.classList.toggle("none");
 }
- const drop = document.querySelector(".icon-drop");
- const ul = document.querySelector(".drop-down ul");
- drop.addEventListener("click", () => {
-   ul.classList.toggle("drop");
- })
+const drop = document.querySelector(".icon-drop");
+const ul = document.querySelector(".drop-down ul");
+drop.addEventListener("click", () => {
+  ul.classList.toggle("drop");
+})
 
 
 var slideIndex = 1;
@@ -22,7 +22,8 @@ const show1 = document.getElementById("show1");
 data.forEach((item, index) => {
   show1.innerHTML +=
     `
-        <div class="slide fade">
+      <a href="./guest_article.html">
+        <div class="slide fade" >
             <img src="https://img.meta.com.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg" class="img-magazine">
             <div style="font-size: 12px; margin-top: 5px"> 5 min read </div>
             <div class="title-magazine">Magazines for graphic designers: The best graphic design publications</div>
@@ -31,8 +32,8 @@ data.forEach((item, index) => {
                 Read more
                 <i class="fa-solid fa-caret-right" style="margin-left: 10px"></i>
             </div>
-            <p>${index + 1}</p>
         </div>
+        </a>
       `;
 })
 
@@ -84,6 +85,7 @@ console.log(show2);
 data1.forEach((item, index) => {
   show2.innerHTML +=
     `
+      <a href="./guest_article.html">
         <div class="slide1 fade">
             <div class="img-magazine">
             <img src="https://cdn.trangcongnghe.com.vn/uploads/posts/2023-08/1692861228_image.png">
@@ -95,8 +97,8 @@ data1.forEach((item, index) => {
                 Read more
                 <i class="fa-solid fa-caret-right" style="margin-left: 10px"></i>
             </div>
-            <p>${index + 1}</p>
-        </div>
+          </div>
+        </a>
       `;
 })
 const slides1 = document.getElementsByClassName("slide1");
@@ -109,7 +111,7 @@ function showSlides1(n) {
 
   // 1 0 vs 1 0 thi 
   if (window.matchMedia("(max-width: 1024px)").matches) { // Mobile
-   
+
     if (n == slides1.length - 1) {
       slideIndex1 = 1;
     }
@@ -118,9 +120,9 @@ function showSlides1(n) {
     }
     for (i = 0; i < slides1.length; i++) {
       slides1[i].style.display = "none";
-     
+
     }
-    console.log(3,slides1[slideIndex1 - 1]);
+    console.log(3, slides1[slideIndex1 - 1]);
     slides1[slideIndex1 - 1].style.display = "block ";
     console.log(slideIndex1);
     slides1[slideIndex1].style.display = "block";
@@ -154,6 +156,7 @@ console.log(show3);
 data3.forEach((item, index) => {
   show3.innerHTML +=
     `
+      <a href="./guest_article.html">
         <div class="slide3 fade">
             <div class="img-magazine">
             <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/8/21/829850/Bat-Cuoi-Truoc-Nhung-07.jpg">
@@ -165,8 +168,8 @@ data3.forEach((item, index) => {
                 Read more
                 <i class="fa-solid fa-caret-right" style="margin-left: 10px"></i>
             </div>
-            <p>${index + 1}</p>
-        </div>
+          </div>
+        </a>
       `;
 })
 const slides3 = document.getElementsByClassName("slide3");
@@ -178,7 +181,7 @@ function showSlides3(n) {
 
   // 1 0 vs 1 0 thi 
   if (window.matchMedia("(max-width: 1024px)").matches) { // Mobile
-   
+
     if (n == slides3.length - 1) {
       slideIndex3 = 1;
     }
@@ -187,7 +190,7 @@ function showSlides3(n) {
     }
     for (i = 0; i < slides3.length; i++) {
       slides3[i].style.display = "none";
-     
+
     }
     slides3[slideIndex3 - 1].style.display = "block ";
 

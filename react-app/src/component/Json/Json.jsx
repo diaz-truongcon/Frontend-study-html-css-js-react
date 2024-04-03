@@ -14,7 +14,8 @@ function Json(props) {
             category: '',
             img: '',
         }
-    )
+    );
+    const [idEdit, setIdEdit] = useState(null);
     const handleInputChange = e => {
         const { name, value } = e.target;
         setNewProduct({ ...newProduct, [name]: value });
@@ -22,10 +23,49 @@ function Json(props) {
 
     const handleSubmit = async e => {
         e.preventDefault();
+        // if (idEdit) {
+        //     try {
+        //         await axios.put(`http://localhost:3000/products/${idEdit}`, newProduct);
+        //         setShowModal(false);
+        //         setUpdate(!update);
+        //         setNewProduct({
+        //             name: '',
+        //             price: '',
+        //             category: '',
+        //             img: '',
+        //         })
+        //     } catch (error) {
+        //         console.error('Error', error)
+        //     }
+        // } else {
+        //     try {
+        //         await axios.post("http://localhost:3000/products", newProduct);
+        //         setShowModal(false);
+        //         setUpdate(!update);
+        //         setNewProduct({
+        //             name: '',
+        //             price: '',
+        //             category: '',
+        //             img: '',
+        //         })
+        //     } catch (error) {
+        //         console.error('Error', error)
+        //     }
+        // }
         try {
-            await axios.post("http://localhost:3000/products", newProduct);
+            if (idEdit) {
+                await axios.put(`http://localhost:3000/products/${idEdit}`, newProduct);
+            } else {
+                await axios.post("http://localhost:3000/products", newProduct);
+            }
             setShowModal(false);
-            setUpdate( !update);
+            setUpdate(!update);
+            setNewProduct({
+                name: '',
+                price: '',
+                category: '',
+                img: '',
+            })
         } catch (error) {
             console.error('Error', error)
         }
@@ -63,6 +103,12 @@ function Json(props) {
         }
     }
 
+    const handleEdit = (id) => {
+        setShowModal(true);
+        setIdEdit(id);
+        const productEdit = products.find((item) => item.id == id);
+        setNewProduct(productEdit);
+    }
 
     const nameByCategory = (id) => {
         const category = categories.find((category) => category.id == id);
@@ -102,7 +148,7 @@ function Json(props) {
                                         <img src={item.img} className="h-12 w-12 object-cover" />
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
-                                        <button className="bg-blue-500 text-white px-3 py-1 rounded-md mr-2 hover:bg-blue-600">Edit</button>
+                                        <button onClick={() => handleEdit(item.id)} className="bg-blue-500 text-white px-3 py-1 rounded-md mr-2 hover:bg-blue-600">Edit</button>
                                         <button onClick={() => handleDelete(item.id)} className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600">Delete</button>
                                     </td>
                                 </tr>
@@ -117,7 +163,11 @@ function Json(props) {
             {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50">
                     <div className="bg-white p-8 rounded-lg w-1/2">
-                        <h2 className="text-2xl font-semibold mb-4"></h2>
+                        <h2 className="text-2xl font-semibold mb-4">
+                            {
+                                idEdit ? "Edit Product" : "Add Product"
+                            }
+                        </h2>
                         <form onSubmit={handleSubmit} >
                             <div className="mb-4">
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label>
@@ -141,8 +191,19 @@ function Json(props) {
                                 <input type="text" id="img" name="img" value={newProduct.img} onChange={handleInputChange} className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
                             </div>
                             <div className="flex justify-end">
-                                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">add</button>
-                                <button onClick={() => setShowModal(false)} className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md ml-2 hover:bg-gray-400">Cancel</button>
+                                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                                    {
+                                        idEdit ? "Update" : "Add"
+                                    }
+                                </button>
+                                <button onClick={() => {
+                                    setShowModal(false); setIdEdit(null); setNewProduct({
+                                        name: '',
+                                        price: '',
+                                        category: '',
+                                        img: '',
+                                    })
+                                }} className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md ml-2 hover:bg-gray-400">Cancel</button>
                             </div>
                         </form>
                     </div>

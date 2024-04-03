@@ -1,25 +1,32 @@
 {
   "category": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Laptop"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Mobile"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Tablet"
     }
   ],
   "products": [
     {
-      "id": "387e",
-      "name": "Asus",
+      "id": "b380",
+      "name": "sdvgsvsd",
+      "price": "bbrbrb",
+      "category": "2",
+      "img": "https://dlcdnwebimgs.asus.com/gain/838fbdac-6d10-4190-8e52-d4b9463f5d23/w185/fwebp"
+    },
+    {
+      "id": "6a8f",
+      "name": "Asus OLED",
       "price": "100",
-      "category": "1",
-      "img": "https://dlcdnwebimgs.asus.com/gain/5aec2cd0-5a8a-4f59-89a0-060431b330bf/w692"
+      "category": "2",
+      "img": "https://dlcdnwebimgs.asus.com/gain/838fbdac-6d10-4190-8e52-d4b9463f5d23/w185/fwebp"
     }
   ]
 }

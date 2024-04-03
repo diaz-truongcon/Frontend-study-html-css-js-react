@@ -1,63 +1,36 @@
-ul#menu,
-ul#menu ul#sub {
-
-    padding: 0;
-
-    margin: 0;
-
-}
-
-ul#menu li {
-
-    list-style-type: none;
-    /* code này để bỏ các dấu chấm tròn*/
-
-    float: left;
-    /* code này để menu dàn hàng ngang*/
-
-    margin-right: 10px;
-    /* tạo lề cho các menu*/
-
-}
-
-ul#menu li a {
-
-    text-decoration: none;
-
-    background-color: #900;
-
-    padding: 5px;
-
-    color: white;
-
-}
-
-ul#menu li {
-
-    positon: relative;
-
-}
-
-ul#menu li ul#sub {
-
-    display: none;
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dropdown-menu {
     position: absolute;
-
-    width: 100px;
-
-}
-
-ul#menu li ul#sub li {
-
-    margin-top: 10px;
-
-    margin-bottom: 5px;
-
-}
-
-ul#menu li:hover ul#sub {
-
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .dropdown-item {
     display: block;
-
-}
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+  
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  
